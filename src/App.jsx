@@ -10,7 +10,7 @@ import Profile from "./pages/profile/Profile";
 import Blog from "./pages/blog/Blog";
 import Favorite from "./pages/favorite/Favorite";
 import NotFound from "./pages/not-found/NotFound";
-import LoginForm from "../../client/src/components/login-form/LoginForm";
+import LoginForm from "./components/login-form/LoginForm";
 import Toast from "./components/toast-message/Toast";
 import ProductDetails from "./components/product-details-page/ProductDetails";
 
