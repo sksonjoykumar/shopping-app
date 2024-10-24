@@ -30,7 +30,7 @@ function App() {
           <Route path="/signup" element={<LoginForm />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/favorite" element={<Favorite />} />
-          <Route path="//productdetails/:id" element={<ProductDetails />} />
+          <Route path="/productdetails/:id" element={<ProductDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
