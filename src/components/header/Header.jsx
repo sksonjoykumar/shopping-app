@@ -15,7 +15,7 @@ function Header() {
     setSearchBox(!searchBox);
   };
   return (
-    <div className="pt-4 bg-slate-50 top-0 z-50 sticky">
+    <div className="pt-4 md:pt-3 bg-slate-50 top-0 z-50 sticky">
       <div className="mx-auto px-1 sm:px-6 md:px-20">
         <div className="flex items-center justify-around md:justify-between relative">
           <div className="logo">
