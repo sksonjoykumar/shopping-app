@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import { products } from "../database/database";
+import { toast } from "react-toastify";
 
 // StoreContext
 export const StoreContext = createContext();

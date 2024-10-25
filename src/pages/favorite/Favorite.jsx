@@ -25,12 +25,12 @@ function Favorite() {
         {favorite &&
           favorite.map((item) => (
             <div key={item._id} className="mt-6 border-b pb-3 border-gray-300">
-              <div className="flex gap-5">
+              <div className="flex flex-col sm:flex-row justify-center sm:justify-start items-center sm:items-start gap-5">
                 <div>
                   <img
                     src={item?.images[0]}
                     alt="product-img"
-                    className="w-auto md:w-96 h-40 object-cover border rounded-sm hover:scale-105 transition-all duration-300 cursor-pointer"
+                    className="w-96 h-auto md:h-40 object-cover border rounded-sm hover:scale-105 transition-all duration-300 cursor-pointer"
                   />
                 </div>
 

@@ -33,7 +33,7 @@ const DropDown = () => {
     <div className="relative inline-block text-left">
       <button
         onClick={toggleDropdown}
-        className="bg-[#1D2A35] text-white py-2 px-9 rounded-lg flex items-center border border-gray-500 shadow-sm"
+        className="bg-[#1D2A35] text-white py-2 px-4 md:px-9 rounded-lg flex items-center border border-gray-500 shadow-sm"
       >
         Select Category
         <span className="ml-2">{isOpen ? "▲" : "▼"}</span>
@@ -42,7 +42,7 @@ const DropDown = () => {
       {isOpen && (
         <ul className="absolute -right-11  md:right-0 mt-2 w-56 bg-[#1D2A35] rounded-lg shadow-lg overflow-hidden">
           {categories.map((category, index) => (
-            <Link to={"shop"}>
+            <Link to={"shop"} key={index}>
               <li
                 key={index}
                 className="flex items-center px-4 py-2 text-white hover:bg-gray-700 cursor-pointer"

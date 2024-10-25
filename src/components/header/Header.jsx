@@ -15,13 +15,13 @@ function Header() {
     setSearchBox(!searchBox);
   };
   return (
-    <div className="pt-3 bg-slate-50 top-0 z-50 sticky">
+    <div className="pt-4 bg-slate-50 top-0 z-50 sticky">
       <div className="mx-auto px-1 sm:px-6 md:px-20">
-        <div className="flex items-center justify-between relative">
+        <div className="flex items-center justify-around md:justify-between relative">
           <div className="logo">
             <Link to={"/"} className="flex items-center">
               <CiShoppingTag color="#0EADC6" size={30} />
-              <span className="text-[#845DB6] text-[20px] font-semibold font-kaushan">
+              <span className="hidden md:block text-[#845DB6] text-[20px] font-semibold font-kaushan">
                 Shopping
               </span>
             </Link>
@@ -55,7 +55,7 @@ function Header() {
                   size={28}
                   className="hover:text-[#0EADE6] transition-all duration-300"
                 />
-                <p className=" hidden w-[1.2rem] h-[1.2rem] md:flex justify-center items-center rounded-full bg-red-500 text-center text-white absolute text-[.75rem] -right-4 top-[-14px]">
+                <p className="w-[1.2rem] h-[1.2rem] md:flex justify-center items-center rounded-full bg-red-500 text-center text-white absolute text-[.75rem] -right-4 top-[-14px]">
                   {favorite.length}
                 </p>
               </Link>
@@ -64,14 +64,14 @@ function Header() {
                   size={28}
                   className="hover:text-[#0EADE6] transition-all duration-300"
                 />
-                <p className="hidden w-[1.2rem] h-[1.2rem] md:flex justify-center items-center rounded-full bg-red-500 text-center text-white absolute text-[.75rem] -right-4 top-[-14px]">
+                <p className=" w-[1.2rem] h-[1.2rem] md:flex justify-center items-center rounded-full bg-red-500 text-center text-white absolute text-[.75rem] -right-4 top-[-14px]">
                   {cartItems.length}
                 </p>
               </Link>
             </div>
           </div>
           {!searchBox && (
-            <div className="md:hidden absolute top-16 left-[8%] sm:left-[30%] opacity-100] ">
+            <div className="md:hidden z-50 absolute top-16 left-[8%] sm:left-[30%] opacity-100] ">
               <div className="search  relative md:hidden ">
                 <input
                   type="search"
