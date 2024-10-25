@@ -53,7 +53,7 @@ function DeliveryInfo() {
             Delivery Information
           </h1>
           <form onSubmit={handleSubmit}>
-            <div className="flex gap-4 mt-7">
+            <div className="flex w-auto flex-col md:flex-row gap-4 mt-7">
               <input
                 type="text"
                 name="firstName"
@@ -80,7 +80,7 @@ function DeliveryInfo() {
               value={formData.email}
               onChange={handleOnChange}
             />
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-auto flex-col md:flex-row">
               <input
                 type="text"
                 name="city"
@@ -106,7 +106,7 @@ function DeliveryInfo() {
               value={formData.street}
               onChange={handleOnChange}
             />
-            <div className="flex gap-4">
+            <div className="flex gap-4 w-auto flex-col md:flex-row">
               <input
                 type="text"
                 name="zipCode"
