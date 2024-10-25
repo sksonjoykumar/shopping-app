@@ -56,7 +56,7 @@ function Navbar() {
         </ul>
         {/* responsive menubar */}
         {showMenu && (
-          <div className="block sm:hidden absolute right-0 top-[3.2rem] z-10 bg-[#1D2A35] w-[200px] h-[300px] rounded-md">
+          <div className="block sm:hidden absolute right-0 top-[3.2rem] z-10 bg-[#1D2A35] w-[200px] h-screen rounded-md">
             <ul className=" flex flex-col items-center justify-center gap-4 lg:gap-20 text-white  text-lg">
               <li className="hover:text-[#0EADC6] transition-all duration-200">
                 <NavLink to={"/"}>Home</NavLink>
