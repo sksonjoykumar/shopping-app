@@ -60,17 +60,8 @@ To run this project locally:
 Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-This will start the app locally. Open your browser and go to `http://localhost:3000`.
-
-### **Building for Production**
-
-To create a production build of the app:
-
-```bash
-npm run build
-```
 
 This will generate a `build` folder containing the compiled app, which can be deployed to platforms like Vercel or Netlify.
